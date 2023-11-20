@@ -1,0 +1,39 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#AB47BC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Beer manager"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#AB47BC"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#AB47BC"
+            android:textColorHint="#AB47BC"
+            android:textColorLink="#AB47BC"
+            android:onClick="createNewBeer"
+            app:icon="@drawable/baseline_add_24"
+            app:iconSize="30dp"
+            app:iconTint="#FFFFFF" />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

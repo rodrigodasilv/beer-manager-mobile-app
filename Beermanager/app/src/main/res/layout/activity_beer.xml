@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar_edit_beer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/form_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome" />
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Nome" />
+
+            <TextView
+                android:id="@+id/form_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição" />
+
+            <EditText
+                android:id="@+id/input_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Descrição" />
+
+            <TextView
+                android:id="@+id/form_alcool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teor alcoólico" />
+
+            <EditText
+                android:id="@+id/input_alcool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/form_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo" />
+
+            <EditText
+                android:id="@+id/input_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Tipo" />
+
+            <TextView
+                android:id="@+id/form_origem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Origem" />
+
+            <EditText
+                android:id="@+id/input_origem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Origem" />
+
+            <TextView
+                android:id="@+id/form_cervejaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cervejaria" />
+
+            <EditText
+                android:id="@+id/input_cervejaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Cervejaria" />
+
+            <TextView
+                android:id="@+id/form_preco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preço" />
+
+            <EditText
+                android:id="@+id/input_preco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/form_disponibilidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disponível" />
+
+            <Spinner
+                android:id="@+id/input_disponibilidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#AB47BC"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="update"
+        android:text="Atualizar" />
+
+</RelativeLayout>
